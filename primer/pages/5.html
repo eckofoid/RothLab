@@ -1,0 +1,292 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<link rel="SHORTCUT ICON" href="../images/_nb_interface/favicon.ico">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>rdplot</title>
+<script language="Javascript" type="text/javascript" src="./notebook.js"></script>
+<style type="text/css">div.notebookcell{ position:relative; }</style>
+<style type="text/css">td.nbt { padding : 3px 0px 0px 0px; }</style>
+<STYLE type="text/css">
+
+	.pna0 {
+		font-family : Helvetica,Arial,sans-serif;
+		font-size : 20px;
+		font-weight : bold;
+		color : #000000;
+	}
+
+
+	.pnu0 {
+		font-family : Helvetica,Arial,sans-serif;
+		font-size : 14px;
+		color : #000000;
+	}
+
+
+	.blankline {
+		font-family : Helvetica,Arial,sans-serif;
+		font-size : 14px;
+		color : #000000;
+		text-align : center;
+	}
+
+
+	.f0 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #999999;
+	}
+
+
+	.f1 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #000000;
+	}
+
+
+	.f2 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #b13cc4;
+	}
+
+
+	.f3 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #cb639c;
+	}
+
+
+	.f4 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #fbc669;
+	}
+
+
+	.f5 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #fa9254;
+	}
+
+
+	.f6 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #287fae;
+	}
+
+
+	.f7 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #7cb646;
+	}
+
+
+	.f8 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #2e37ea;
+	}
+
+
+	.f9 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #cf696a;
+		text-decoration : underline;
+	}
+
+
+	.f10 {
+		font-family : Monaco,Helvetica,Arial,sans-serif;
+		font-size : 11px;
+		color : #d12a2d;
+	}
+
+	a.l1:link {
+		color : #cf696a;
+		text-decoration : underline;
+	}
+	a.l1:visited {
+		color : #cf696a;
+		text-decoration : underline;
+	}
+	a.l1:active {
+		color : #cf696a;
+		text-decoration : underline;
+	}
+	a.l1:hover {
+		color : #cf696a;
+		text-decoration : underline;
+	}
+	a.lmo1:link {
+		color : #cf696a;
+		text-decoration : none;
+	}
+	a.lmo1:visited {
+		color : #cf696a;
+		text-decoration : none;
+	}
+	a.lmo1:active {
+		color : #efa048;
+		text-decoration : underline;
+	}
+	a.lmo1:hover {
+		color : #efa048;
+		text-decoration : underline;
+	}
+
+</STYLE>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" marginheight="0" leftmargin="0" marginwidth="0" onload="InitNotebookPage();">
+<map id="tabmap" name="tabmap">
+    <area shape="rect" coords="0,68,22,133" href="../index.html" alt="">
+</map>
+<map id="pagecurlltmap" name="pagecurlltmap">
+    <area shape="poly" coords="0,1,22,23,0,29" href="./4.html"
+          onmouseover="SwapImage('pagecurl_lt', '../images/_nb_interface/pagecurllt_ll.gif');SwapImage('pagecurl_rt', '../images/_nb_interface/pagecurlrt.gif');"
+          onmouseout="SwapImage('pagecurl_lt', '../images/_nb_interface/pagecurllt.gif');"
+          alt="">
+    <area shape="poly" coords="0,0,22,0,22,22" href="../index.html"
+          onmouseover="SwapImage('pagecurl_lt', '../images/_nb_interface/pagecurllt_ur.gif');SwapImage('pagecurl_rt', '../images/_nb_interface/pagecurlrt_ur.gif');"
+          onmouseout="SwapImage('pagecurl_lt', '../images/_nb_interface/pagecurllt.gif');SwapImage('pagecurl_rt', '../images/_nb_interface/pagecurlrt.gif');"
+          alt="">
+</map>
+<map id="pagecurlrtmap" name="pagecurlrtmap">
+    <area shape="poly" coords="0,0,6,0,6,29,0,24" href="../index.html"
+          onmouseover="SwapImage('pagecurl_lt', '../images/_nb_interface/pagecurllt_ur.gif');SwapImage('pagecurl_rt', '../images/_nb_interface/pagecurlrt_ur.gif');"
+          onmouseout="SwapImage('pagecurl_lt', '../images/_nb_interface/pagecurllt.gif');SwapImage('pagecurl_rt', '../images/_nb_interface/pagecurlrt.gif');"
+          alt="">
+</map>
+<!-- PAGE CONTENT -->
+
+ <table summary="layout frame" border="0" cellspacing="0" cellpadding="0" width="100%" height="100%" background="../images/_nb_marginLines/swatchfefffe.png">
+  <tr>
+    <td width="15" background="../images/_nb_interface/noring.gif"><img src="../images/_nbs.gif" alt="" border="0" width="15" height="15"></td>
+    
+    <td width="1">
+      <table summary="page holes" border="0" cellspacing="0" cellpadding="0" width="1" height="100%">
+        <tr>
+          <td height="33%" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="76"><br>
+          </td>
+        </tr>
+        <tr>
+          <td height="33%" valign="middle"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="200"><br>
+          <br>
+          <img src="../images/_nbs.gif" alt="" border="0" width="1" height="200"></td>
+        </tr>
+        <tr>
+          <td height="33%" valign="bottom"><br>
+          <img src="../images/_nbs.gif" alt="" border="0" width="1" height="50"></td>
+        </tr>
+      </table>    
+    </td>
+    <td width="100%" valign="top">
+      <table summary="notebook topmargin" border="0" cellspacing="0" cellpadding="0" width="100%" height="60">
+        <tr>
+          <td width="20" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="20" height="1"></td>
+          <td width="1"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="1"></td>
+          <td width="4" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="4" height="1"></td>
+          <td width="100%" valign="top" align="right" nowrap ><font class="pnu0">5</font><img src="../images/_nbs.gif" alt="" border="0" width="5" height="1"><img name="pagecurl_lt" src="../images/_nb_interface/pagecurllt.gif" alt="" border="0" width="23" height="33" usemap="#pagecurlltmap"><br>
+          <img src="../images/_nbs.gif" alt="" border="0" width="540" height="1"></td>
+        </tr>
+      </table>
+<table summary="notebook cell" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+      <td width="20" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="20" height="4"><br>
+</td>
+      
+      
+      <td width="4" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="4" height="1"></td>
+      
+      <td width="100%" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="4"><br>
+<font class="pna0">rdplot<br></font></td>
+      
+      <td width="8" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="8" height="1"></td>
+    </tr>
+</table>
+<table summary="notebook cell" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+      <td width="20" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="20" height="1"></td>
+
+       <td width="4" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="4" height="1"></td>
+      
+      <td valign="top"><nobr><img src="../images/_nbs.gif" width="13" height="13" border="0" alt=""></nobr></td>      <td width="100%" valign="top"></td>
+
+      <td width="8" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="8" height="1"></td>
+    </tr>
+    <tr>
+      <td colspan="2" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="24" height="4"></td>
+      <td colspan="2" width="100%" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="4"></td>
+      <td width="8" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="8" height="4"></td>
+    </tr>
+</table>
+<table summary="notebook cell" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+      <td width="20" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="20" height="1"></td>
+
+       <td width="4" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="4" height="1"></td>
+      
+      <td valign="top"><nobr><img src="../images/_nb_interface/Linked.png" width="13" height="13" border="0" alt=""><img src="../images/_nbs.gif" alt="" border="0" width="3" height="1"></nobr></td>      <td width="100%" valign="top"><font class="f0">#!/bin/sh</font><font class="f1"><br></font><font class="f1"><br></font><font class="f2">#==================================== Description =====================================#</font><font class="f1"><br></font><font class="f2">### (Leave help function at beginning of script, as it's also the doc string.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###</font><font class="f1"><br></font><font class="f3">function</font><font class="f1"> </font><font class="f4">help</font><font class="f1"> { </font><font class="f5">cat</font><font class="f1"> &lt;&lt;</font><font class="f6">'HELP_'</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f1"><br></font><font class="f1">================================================</font><font class="f1"><br></font><font class="f4">Read-depth</font><font class="f1"> </font><font class="f4">plot</font><font class="f1"> </font><font class="f5">from</font><font class="f1"> .</font><font class="f4">xls</font><font class="f1"> </font><font class="f5">file</font><font class="f1"><br></font><font class="f1">================================================</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f1"><br></font><font class="f4">Primitive</font><font class="f1"> </font><font class="f5">script</font><font class="f1"> </font><font class="f4">with</font><font class="f1"> </font><font class="f4">little</font><font class="f1"> </font><font class="f4">error</font><font class="f1"> </font><font class="f4">checking.</font><font class="f1"> </font><font class="f4">A</font><font class="f1"> </font><font class="f4">gnuplot</font><font class="f1"> </font><font class="f5">script</font><font class="f1"> </font><font class="f4">is</font><font class="f1"> </font><font class="f4">created</font><font class="f1"> </font><font class="f3">in</font><font class="f1"> </font><font class="f4">a</font><font class="f1"> </font><font class="f1"><br></font><font class="f4">here-document</font><font class="f1"> </font><font class="f4">and</font><font class="f1"> </font><font class="f4">passed</font><font class="f1"> </font><font class="f4">directly</font><font class="f1"> </font><font class="f4">to</font><font class="f1"> </font><font class="f4">gnuplot</font><font class="f1">, </font><font class="f4">avoiding</font><font class="f1"> </font><font class="f4">unnecessary</font><font class="f1"> </font><font class="f5">file</font><font class="f1"> </font><font class="f4">I</font><font class="f1">/</font><font class="f4">O.</font><font class="f1"><br></font><font class="f4">Input</font><font class="f1"> </font><font class="f4">data</font><font class="f1"> </font><font class="f5">file</font><font class="f1"> </font><font class="f4">is</font><font class="f1"> </font><font class="f4">of</font><font class="f1"> </font><font class="f5">type</font><font class="f1"> .</font><font class="f4">xls</font><font class="f1"> </font><font class="f4">generated</font><font class="f1"> </font><font class="f4">by</font><font class="f1"> </font><font class="f7">&quot;sol&quot;</font><font class="f1"> </font><font class="f4">workflow.</font><font class="f1"><br></font><font class="f1"><br></font><font class="f4">Usage</font><font class="f1">:</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;$ </font><font class="f5">rdplot</font><font class="f1"> [-</font><font class="f4">h</font><font class="f1">] &lt;.</font><font class="f4">xls</font><font class="f1"> </font><font class="f4">input</font><font class="f1"> </font><font class="f5">file</font><font class="f1">&gt; &lt;</font><font class="f4">max.</font><font class="f1"> </font><font class="f4">range</font><font class="f1">&gt; &lt;</font><font class="f4">bin</font><font class="f1"> </font><font class="f5">size</font><font class="f1">&gt; &lt;</font><font class="f4">plot</font><font class="f1"> </font><font class="f4">color</font><font class="f1">&gt; [</font><font class="f4">plot</font><font class="f1"> </font><font class="f4">title</font><font class="f1">]</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1"> </font><font class="f4">Options</font><font class="f1">:</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</font><font class="f4">h</font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f4">help</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1"> </font><font class="f4">Arguments</font><font class="f1"> (</font><font class="f4">strict</font><font class="f1"> </font><font class="f4">order</font><font class="f1">)</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">$in</font><font class="f1"> = .</font><font class="f4">xls</font><font class="f1"> </font><font class="f4">data</font><font class="f1"> </font><font class="f5">file</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(</font><font class="f4">e.g.</font><font class="f1">, </font><font class="f7">&quot;sty.xls&quot;</font><font class="f1">)</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">$maxrange</font><font class="f1"> = </font><font class="f4">maximum</font><font class="f1"> </font><font class="f4">range</font><font class="f1"> </font><font class="f4">value</font><font class="f1"> </font><font class="f3">in</font><font class="f1"> </font><font class="f5">units</font><font class="f1"> </font><font class="f4">of</font><font class="f1"> </font><font class="f4">bin</font><font class="f1"> </font><font class="f5">size</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (</font><font class="f4">e.g.</font><font class="f1">, 5000 </font><font class="f3">for</font><font class="f1"> </font><font class="f4">sty</font><font class="f1"> </font><font class="f4">chromosome</font><font class="f1">)</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">$bin</font><font class="f1"> = </font><font class="f4">bin</font><font class="f1"> </font><font class="f5">size</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (</font><font class="f4">e.g.</font><font class="f1">, 1000 </font><font class="f3">for</font><font class="f1"> </font><font class="f4">sty</font><font class="f1"> </font><font class="f4">chromosome</font><font class="f1">)</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">$color</font><font class="f1"> = </font><font class="f4">plot</font><font class="f1"> </font><font class="f4">color</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (</font><font class="f4">e.g.</font><font class="f1">, </font><font class="f7">&quot;blue&quot;</font><font class="f1">)</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">$title</font><font class="f1"> = </font><font class="f4">plot</font><font class="f1"> </font><font class="f4">title</font><font class="f1"> (</font><font class="f4">optional</font><font class="f1">; </font><font class="f5">defaults</font><font class="f1"> </font><font class="f4">to</font><font class="f1"> </font><font class="f4">data</font><font class="f1"> </font><font class="f5">file</font><font class="f1"> </font><font class="f4">name</font><font class="f1">)</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(</font><font class="f4">e.g.</font><font class="f1">, </font><font class="f7">&quot;TT26528&quot;</font><font class="f1">)</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1"> </font><font class="f4">Author</font><font class="f1">:</font><font class="f1"><br></font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f4">Eric</font><font class="f1"> </font><font class="f4">Kofoid</font><font class="f1">, 4/2/2012</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f9"><a href="mailto:eckofoid@ucdavis.edu" class="l1">eckofoid@ucdavis.edu</a></font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f4">Last</font><font class="f1"> </font><font class="f4">change</font><font class="f1">: 8/30/12</font><font class="f1"><br></font><font class="f1"><br></font><font class="f4">HELP_</font><font class="f1"><br></font><font class="f1">}</font><font class="f1"><br></font><font class="f2">#======================================================================================#</font><font class="f1"><br></font><font class="f1"><br></font><font class="f2">## Check arguments and process when possible</font><font class="f1"><br></font><font class="f1"><br></font><font class="f3">if</font><font class="f1"> [ </font><font class="f8">$#</font><font class="f1"> = 0 ] || [ </font><font class="f8">$1</font><font class="f1"> = </font><font class="f7">&quot;-h&quot;</font><font class="f1"> ] || [ </font><font class="f8">$1</font><font class="f1"> = </font><font class="f7">&quot;--help&quot;</font><font class="f1"> ]</font><font class="f1"><br></font><font class="f3">then</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f4">help</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f4">exit</font><font class="f1"><br></font><font class="f1"><br></font><font class="f3">elif</font><font class="f1"> [ </font><font class="f8">$#</font><font class="f1"> -</font><font class="f4">lt</font><font class="f1"> 4 ]</font><font class="f1"><br></font><font class="f3">then</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f5">echo</font><font class="f1"> </font><font class="f7">&quot;Insufficient</font><font class="f1"> </font><font class="f7">parameters&quot;</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f4">exit</font><font class="f1"><br></font><font class="f3">else</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">in</font><font class="f1">=</font><font class="f8">$1</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">maxrange</font><font class="f1">=</font><font class="f8">$2</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">bin</font><font class="f1">=</font><font class="f8">$3</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">color</font><font class="f1">=</font><font class="f8">$4</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">outf</font><font class="f1">=</font><font class="f10">`basename</font><font class="f1"> </font><font class="f8">${in%.*}</font><font class="f1"> </font><font class="f10">2&gt;/dev/null`</font><font class="f1">.</font><font class="f5">ps</font><font class="f1"><br></font><font class="f3">fi</font><font class="f1"><br></font><font class="f1"><br></font><font class="f3">if</font><font class="f1"> [ </font><font class="f8">$#</font><font class="f1"> = 5 ]</font><font class="f1"><br></font><font class="f3">then</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">title</font><font class="f1">=</font><font class="f8">$5</font><font class="f1"><br></font><font class="f3">else</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">title</font><font class="f1">=</font><font class="f8">$in</font><font class="f1"><br></font><font class="f3">fi</font><font class="f1"><br></font><font class="f1"><br></font><font class="f3">if</font><font class="f1"> [ </font><font class="f8">$bin</font><font class="f1"> = 1000 ]</font><font class="f1"><br></font><font class="f3">then</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">xunit</font><font class="f1">=</font><font class="f7">&quot;KB&quot;</font><font class="f1"><br></font><font class="f3">else</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f8">xunit</font><font class="f1">=</font><font class="f8">$bin</font><font class="f7">&quot;</font><font class="f1"> </font><font class="f7">Bases&quot;</font><font class="f1"><br></font><font class="f3">fi</font><font class="f1"><br></font><font class="f1"><br></font><font class="f2">###### Adjusts ymax to a convenient multiple of 10 #####</font><font class="f1"><br></font><font class="f8">ymax</font><font class="f1">=</font><font class="f10">$(awk</font><font class="f1"> </font><font class="f10">-v</font><font class="f1"> </font><font class="f10">mxval=0</font><font class="f1"> </font><font class="f10">'{if</font><font class="f1"> </font><font class="f10">(</font><font class="f8">$1</font><font class="f10">&gt;mxval)</font><font class="f1"> </font><font class="f10">mxval=</font><font class="f8">$1</font><font class="f10">};END</font><font class="f1"> </font><font class="f10">{printf</font><font class="f1"> </font><font class="f10">&quot;%d&quot;,</font><font class="f1"> </font><font class="f10">mxval/'</font><font class="f8">$bin</font><font class="f10">'}'</font><font class="f1"> </font><font class="f8">$in</font><font class="f10">)</font><font class="f1"><br></font><font class="f8">ynorm</font><font class="f1">=1</font><font class="f1"><br></font><font class="f8">foo</font><font class="f1">=</font><font class="f8">$ymax</font><font class="f1"><br></font><font class="f3">while</font><font class="f1"> [[ </font><font class="f8">$foo</font><font class="f1"> -</font><font class="f4">ne</font><font class="f1"> 0 ]]</font><font class="f1"><br></font><font class="f3">do</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;(( </font><font class="f8">ynorm</font><font class="f1">=10*</font><font class="f4">ynorm</font><font class="f1"> ))</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;(( </font><font class="f8">foo</font><font class="f1">=</font><font class="f4">foo</font><font class="f1">/10 ))</font><font class="f1"><br></font><font class="f3">done</font><font class="f1"><br></font><font class="f1">(( </font><font class="f8">ynorm</font><font class="f1">=</font><font class="f4">ynorm</font><font class="f1">/10 ))</font><font class="f1"><br></font><font class="f1">(( </font><font class="f4">ymax</font><font class="f1"> = ( ( </font><font class="f4">ynorm</font><font class="f1"> + </font><font class="f4">ymax</font><font class="f1"> - 1 ) / </font><font class="f4">ynorm</font><font class="f1"> ) * </font><font class="f4">ynorm</font><font class="f1"> ))</font><font class="f1"><br></font><font class="f3">if</font><font class="f1"> (( (</font><font class="f4">ymax</font><font class="f1">/</font><font class="f4">ynorm</font><font class="f1">)&lt;3 ))</font><font class="f2"> # too few labelled tics</font><font class="f1"><br></font><font class="f3">then</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;(( </font><font class="f8">ynorm</font><font class="f1">=</font><font class="f4">ynorm</font><font class="f1">/2 ))</font><font class="f1"><br></font><font class="f3">fi</font><font class="f1"><br></font><font class="f1">&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="f1"><br></font><font class="f2">########################################################</font><font class="f1"><br></font><font class="f1"><br></font><font class="f4">gnuplot</font><font class="f1"> &lt;&lt;</font><font class="f4">SCRIPT</font><font class="f1"><br></font><font class="f3">unset</font><font class="f1"> </font><font class="f4">key</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">xrange</font><font class="f1"> [0:</font><font class="f8">$maxrange</font><font class="f1">]</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">yrange</font><font class="f1"> [0:</font><font class="f8">$ymax</font><font class="f1">]</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">xlabel</font><font class="f1"> </font><font class="f7">&quot;Chromosomal</font><font class="f1"> </font><font class="f7">Position</font><font class="f1"> </font><font class="f7">(</font><font class="f8">$xunit</font><font class="f7">)&quot;</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">ylabel</font><font class="f1"> </font><font class="f7">&quot;Read</font><font class="f1"> </font><font class="f7">Depth&quot;</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">xtics</font><font class="f1"> </font><font class="f4">nomirror</font><font class="f1"> </font><font class="f4">out</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">ytics</font><font class="f1"> 0,</font><font class="f8">$ynorm</font><font class="f1"> </font><font class="f4">out</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">mytics</font><font class="f1"> 5</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">title</font><font class="f1"> </font><font class="f7">&quot;</font><font class="f8">$title</font><font class="f7">&quot;</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f5">size</font><font class="f1"> </font><font class="f4">ratio</font><font class="f1"> 0.1</font><font class="f1"><br></font><font class="f2"># uncomment following line for ssh imaging using X11:</font><font class="f1"><br></font><font class="f2"># set terminal x11 persist</font><font class="f1"><br></font><font class="f4">plot</font><font class="f1"> </font><font class="f7">&quot;</font><font class="f8">$in</font><font class="f7">&quot;</font><font class="f1"> </font><font class="f4">using</font><font class="f1"> (&#092;</font><font class="f8">$1</font><font class="f1">/</font><font class="f8">$bin</font><font class="f1">) </font><font class="f5">w</font><font class="f1"> </font><font class="f4">boxes</font><font class="f1"> </font><font class="f4">lt</font><font class="f1"> </font><font class="f4">rgb</font><font class="f1"> </font><font class="f7">&quot;</font><font class="f8">$color</font><font class="f7">&quot;</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">t</font><font class="f1"> </font><font class="f4">push</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">t</font><font class="f1"> </font><font class="f4">postscript</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">o</font><font class="f1"> </font><font class="f7">&quot;</font><font class="f8">$outf</font><font class="f7">&quot;</font><font class="f1"><br></font><font class="f4">replot</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">o</font><font class="f1"><br></font><font class="f3">set</font><font class="f1"> </font><font class="f4">t</font><font class="f1"> </font><font class="f4">pop</font><font class="f1"><br></font><font class="f4">SCRIPT<br></font></td>
+
+      <td width="8" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="8" height="1"></td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="4"></td>
+    </tr>
+</table>
+<table summary="notebook cell" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+      <td width="20" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="20" height="1"></td>
+
+       <td width="4" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="4" height="1"></td>
+      
+      <td valign="top"><nobr></nobr></td>      <td width="100%" valign="top"></td>
+
+      <td width="8" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="8" height="1"></td>
+    </tr>
+    <tr>
+      <td colspan="2" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="24" height="4"></td>
+      <td colspan="2" width="100%" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="4"></td>
+      <td width="8" valign="top"><img src="../images/_nbs.gif" alt="" border="0" width="8" height="4"></td>
+    </tr>
+</table>
+      
+    </td>
+    
+    <td width="7" valign="top"><img name="pagecurl_rt" src="../images/_nb_interface/pagecurlrt.gif" alt="" border="0" width="7" height="33" usemap="#pagecurlrtmap"><br>
+<img src="../images/_nbs.gif" alt="" border="0" width="7" height="1"><br><img src="../images/_nbs.gif" alt="" border="0" width="7" height="1"></td>
+    <td width="22" valign="top" background="../images/_nb_interface/rightpagesbg.png"><img src="../images/_nb_tabs/5tab.png" alt="" border="0" width="22" height="145" usemap="#tabmap"></td>
+    <td width="1" bgcolor="#FFFFFF"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="1"></td>
+  
+  </tr>
+  
+  <tr>
+    <td valign="top" colspan="6" bgcolor="#FFFFFF">
+      <table summary="page bottom" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+          <td width="15" height="5" align="left"><img src="../images/_nb_interface/bottomleftpagesnr.png" alt="" border="0" width="15" height="5"></td>
+          <td background="../images/_nb_interface/bottompagesbg.png" align="right"><img src="../images/_nb_interface/bottomrightpages.png" alt="" border="0" width="20" height="5"></td>
+          <td width="18"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="1"></td>
+        </tr>
+        <tr>
+          <td colspan="3"><img src="../images/_nbs.gif" alt="" border="0" width="1" height="10"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  
+</table>   
+
+<!-- /PAGE CONTENT -->
+</body>
+</html>
+
