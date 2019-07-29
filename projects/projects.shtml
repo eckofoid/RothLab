@@ -16,18 +16,10 @@
 <a name="rec"></a>
 <TABLE>
 <TR>
-<TD>
-<script type="text/javascript" src="../../jmol-11.4.4/Jmol.js">
-  jmolInitialize("../../jmol-11.4.4","../../jmol-11.4.4/JmolAppletProto.jar"); // REQUIRED
-  jmolApplet(200, "load ../pics/holliday10mer.pdb");
-</script>
-<EMBED type="chemical/x-pdb" src="../pics/holliday10mer.pdb" 
-align=abscenter width=160 height=150 spiny=36 startspin=true 
-display3D=wireframe color3d=cpk options3d=hetero frank=false></td>
+
 <TD>
 <center><h2>Recombination and chromosome rearrangements</h2></center></TD>
 </TR></TABLE>
-<left><h4>Decamer model of Holliday strand</h4></left>
 
 This project was initiated in an attempt to better understand the 
 structure of the folded bacterial chromosome and the selective forces that 
@@ -57,15 +49,8 @@ biological role of known recombination proteins.
 
 <a name="b12"></a>
 <TABLE><TR>
-<TD>
-<embed type="chemical/x-pdb" src="../pics/b12.pdb" align=abscenter 
-width=160 height=150 spiny=36 startspin=true display3D=spacefill 
-color3d=cpk options3d=hetero frank=false>
-</td>
 <TD><center><h2>Synthesis and significance of cobalamin (B12)</h2></center></TD>
 </TR></TABLE>
-
-<left><h4>Cyanocobalamin (Vitamin B12)</h4></left>
 
 This cofactor is unevenly distributed among living things, suggesting that 
 it might be associated with particular lifestyles or growth conditions.  
@@ -82,12 +67,9 @@ being intensively studied.
 <hr>
 <a name="nadh"></a>
 <TABLE><TR>
-<TD><EMBED type="chemical/x-pdb" src="../pics/nadplus.pdb" 
-align=abscenter width=160 height=150 spiny=36 startspin=true 
-display3D=wireframe color3d=cpk options3d=hetero frank=false></TD>
+    
 <TD><center><h2>Recycling of NAD</h2></center></TD>
 </TR></TABLE>
-<left><h4>NAD+</h4></left>
 
 While NAD is well known as an electron carrier, it also energizes DNA 
 ligation.  We are trying to understand the synthesis and recycling of NAD 
